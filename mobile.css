@@ -1,0 +1,514 @@
+*{
+  box-sizing: border-box;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Oswald', sans-serif;
+}
+
+body{
+   margin:0px;
+   padding:0px;
+  }
+
+  h2{
+    text-align:center;
+    color: rgb(179, 58, 114);
+    font-size: 1.4rem;
+    margin-top:40px;
+    margin-bottom:0px;
+  }
+ /* navbar design starts here */
+
+#header{
+  background-color: aqua;
+}
+ 
+.row{
+  text-align: center;
+  padding:3px 0px;
+}
+
+.nav_logo img{
+    width:80px;
+    height:80px;
+    border-radius:100%;
+}
+
+.nav_heading h2{
+  font-size: 1.7rem;
+  color:rgb(255, 6, 180);
+}
+
+.nav_heading h2{
+  margin:0px;
+  padding:10px 0px ;
+}
+
+.nav_manu{
+  display: flex;
+  flex-direction: column; 
+}
+.nav_manu ul{
+  list-style:none;
+}
+
+.nav_manu ul li{
+  background-color: rgb(111, 219, 183);
+  margin: 10px 40px 20px 0px;
+  padding: 5px;
+  border-radius: 10px;
+  transition:.3s;
+}
+
+.nav_manu ul li:hover{
+  background-color: rgb(216, 233, 233);
+}
+
+.nav_manu ul li a {
+  text-decoration: none;
+  color:rgb(255, 6, 180);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+[class*="col-"]{
+  float:left;
+  padding:10px;
+}
+
+[class*="col-"]{
+  width:100%;
+}
+
+.row::after{
+  content:"";
+  clear:both;
+  display: table;
+}
+
+/* navbar design ends here */
+
+
+/* profile design starts here */
+
+#profile{
+   overflow: hidden;
+   background: rgb(216, 233, 233);
+   text-align: center;
+   padding-bottom:20px;
+}
+
+.hr_design{
+  width:70px;
+  border: 4px solid rgb(192, 149, 179);
+  border-bottom:none;
+  border-radius:5px;
+}
+
+.profile_wrapper{
+   margin:20px 20px;
+   padding:20px 0px;
+}
+
+.profile_des{  
+  border:1px solid rgb(207, 203, 203); 
+  border-radius:5px;
+  margin-bottom:20px;
+}
+
+.profile_des h1{
+  font-family: 'Satisfy', cursive;
+  
+}
+
+.profile_des p{
+  color:gray;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.profile-img{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.profile_img img{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  border:5px solid;
+  animation-name: aslam-img;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: transform 1s;
+ 
+}
+
+.profile_img img:hover{
+  transform: scale(1.1);
+  background-color:rgb(116, 206, 206);
+}
+
+@keyframes aslam-img {
+  0%{
+    color:rgb(255, 6, 180);
+  }
+  50%{
+    color:aqua;
+  }
+  100%{
+    color:rgb(216, 233, 233);
+  }
+}
+
+.profile::after{
+  content:'';
+  clear:both;
+  display: table;
+}
+
+/* profile design ends here */
+
+
+/* contact section starts here */
+
+.contact_section{
+  overflow: hidden;
+  background-color: rgb(184, 228, 230);
+}
+
+.input_sec{
+  border:1px solid rgb(207, 203, 203); 
+  padding:20px;
+  border-radius:5px;
+  text-align: center;
+}
+
+.input_sec p{
+  color:rgb(78, 73, 73);
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.ctn_in{
+  width:100%;
+  padding:10px;
+  outline: none;
+  border-radius:5px;
+  font-size: 1rem;
+  border:none;
+}
+
+.contact_btn{
+  margin:25px 0px;
+  padding:10px 30px;
+  font-size: 1rem;
+  border:none;
+  outline:none;
+  border-radius:5px;
+  transition: .3s;
+}
+
+.contact_btn:hover{
+  background-color: transparent;
+}
+
+.contact_btn a{
+  text-decoration: none;
+  color:rgb(97, 84, 84);
+  font-weight: bold;
+}
+
+.contact_desc{
+  text-align:center;
+}
+
+.contact_desc a {
+    text-decoration: none;
+    color:black;
+}
+
+.contact_desc a i{
+  font-size: 1.5rem;
+  margin-top:15px;
+  color:black;
+}
+
+
+/* contact section ends here */
+
+
+
+/* skill section start here */
+
+.skill_bar{
+  background-color: rgb(211, 248, 250);
+  overflow: hidden;
+  padding-bottom:50px;
+}
+
+.professional_section{
+  margin-top: 40px;
+}
+
+.card{
+  background-color: rgb(133, 141, 141);
+  border-radius:5px;
+  transition:.3s;
+  height:650px;
+  padding:20px 10px;
+}
+
+.card:hover{
+  box-shadow: 2px 2px 1px 2px black;
+
+}
+
+.card_desc{
+  padding-right: 20px;
+}
+
+.card_icon{
+  text-align:center;
+  margin-top:25px;
+}
+.icon_style{
+  font-size: 50px;
+  color:white;
+  border:4px solid white;
+  border-radius:100%;
+  padding:15px;
+}
+
+.card_title{
+  background-color: rgb(59, 56, 56);
+  border-radius:5px;
+}
+
+.card_title h2{
+  color:white;
+  padding:10px;
+}
+
+.skill_container{
+  padding-right:20px;
+}
+
+.skill_container li{
+  list-style: none;
+  margin: 30px 0;
+  font-weight: bolder;
+  text-transform: uppercase;
+  position: relative;
+
+}
+
+.skill_container li::before{
+
+  content: '';
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  background-color: rgb(156, 144, 168);
+  width: 100%;
+  height: 10px;
+  border-radius: 1000px;
+}
+
+.skill_container li::after{
+
+  content: '';
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+
+
+  background-color: rgb(249,249,250);
+  width: 0;
+  height: 10px;
+  border-radius: 1000px;
+
+
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+
+.skill_container li.html::after{
+  animation-name: html;
+}
+
+@keyframes html{
+  to{
+      width: 60%;
+      background-color: orange;
+  }
+}  
+
+.skill_container li.css::after{
+  animation-name: css;
+}
+
+@keyframes css{
+  to{
+    width:60%;
+    background-color: orange;
+  }
+}
+
+.skill_container li.javascript::after{
+  animation-name: javascript;
+}
+
+@keyframes javascript{
+  to{
+    width:20%;
+    background-color: orange;
+  }
+}
+
+.skill_container li.bootstarp::after{
+  animation-name: bootstarp;
+}
+
+@keyframes bootstarp{
+  to{
+    width:70%;
+    background-color: orange;
+  }
+}
+
+.skill_container li.jquery::after{
+  animation-name: jquery;
+}
+
+@keyframes jquery{
+  to{
+    width:50%;
+    background-color: orange;
+  }
+}
+
+.skill_container li.node::after{
+  animation-name: node;
+}
+
+@keyframes node{
+  to{
+    width:2%;
+    background-color: orange;
+  }
+}
+
+.skill_container li.react::after{
+  animation-name: react;
+}
+
+@keyframes react{
+  to{
+    width:5%;
+    background-color: orange;
+  }    
+}
+
+/* skill section ends here */
+
+
+/* survice section starts here */
+
+.survice_content{
+  background-color: rgb(184, 228, 230);
+  overflow: hidden;
+  padding-bottom:100px;
+}
+.survice_bar{
+  padding:10px 20px;
+    
+}
+
+.achivement_bar{
+  background-color: white;
+  border-radius:5px;
+  padding: 0px 20px;
+}
+
+.achivement_bar h2{
+  color:gray;
+  font-size:1.2rem;
+}
+
+.achivement_bar p{
+  color:gray;
+  text-align:justify;
+  padding-bottom:20px;
+}
+
+.contact_bar{
+ text-align: center;
+  
+}
+
+.contact_bar h2{
+  color:gray;
+  margin-bottom:60px;
+}
+
+.btn_contact{
+  padding:12px 15px;
+  border-radius:50%;
+  border:none;
+  outline:none;
+  font-size: 1.3rem;
+  margin-right:20px;
+  margin-bottom:20px;
+  transition:.3s;
+}
+
+.btn_contact:hover{
+  background-color: gray;
+}
+
+
+/* survice section ends here */
+
+/* footer section starts here */
+.footer_section{
+  overflow:hidden;
+  background-color: black;
+  padding:20px 0px;
+}
+  
+.footer{
+  text-align:center;
+}
+
+.footer_manu a{
+  color:white;
+  display: block;
+  padding:15px 0px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition:.3s;
+}
+
+.footer_manu a:hover{
+  color:rgb(158, 147, 147);
+}
+
+.footer_desc{
+  color:white;
+  font-size:0.8rem;
+  transition:.3s;
+}
+
+.footer_desc:hover{
+  color:gray;
+}
+
+span{
+  color: red;
+  margin:0px 5px;
+}
+/* footer section ends here */
